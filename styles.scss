@@ -2,6 +2,11 @@
                 font-family: 'Roboto', sans-serif;
                 margin: auto;
                 max-width: 740px;
+                .toosmall {
+                    display: none;
+                    font-size: 3em;
+                    font-weight: bold;
+                }
                 .header_image {
                     height: 100px;
                     background-color: #531011;
@@ -194,7 +199,9 @@
 
             @media screen and (max-width: 768px) {
                 body {
-
+					p {
+						margin:0;
+					}
                     .desktop {
                         display: none;
                     }
@@ -280,9 +287,13 @@
                     }
                 }
                 @media screen and (max-width: 550px) {
-                    body{
+                    body {
                         display: none;
-                        
+                        .toosmall {
+                            p {
+                                display: block;
+                            }
+                        }
                     }
                 }
             }
